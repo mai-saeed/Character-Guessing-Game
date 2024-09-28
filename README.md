@@ -6,7 +6,7 @@ This project is a **character guessing game** that integrates **Retrieval-Augmen
 
 ## Features
 
-- **Data Scraping**: Wikipedia pages are scraped using `BeautifulSoup`, and only the `<p>` tags are retained for the main content.
+- **Data Scraping**: Wikipedia pages are scraped using BeautifulSoup, and only the `<p>` tags are retained for the main content.
 - **Text Preprocessing**: HTML tags are removed, and paragraphs are split into chunks using recursive splitting to maintain context.
 - **Embeddings**: The paragraphs are embedded using **Cohere**, chosen after experimentation with different models (including GPT-2).
 - **Vector Database**: **Faiss** is used for efficient similarity search and to store the embeddings for fast retrieval.
